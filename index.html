@@ -6,20 +6,20 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap');
     *{box-sizing:border-box;margin:0;padding:0;}
-    body{background:#0b1526;color:#e8eaf2;font-family:'Inter',sans-serif;font-size:17px;line-height:1.75;padding-bottom:80px;}
+    body{background:#0b1526;color:#e8eaf2;font-family:'Inter',sans-serif;font-size:21px;line-height:1.75;padding-bottom:80px;}
     header{background:linear-gradient(135deg,#0d1f3c 0%,#091528 60%,#0a1a2e 100%);color:#e8eaf2;padding:48px 40px 32px;position:relative;overflow:hidden;border-bottom:3px solid #c9a227;}
     header::before{content:'⚕';position:absolute;right:40px;top:20px;font-size:140px;opacity:0.04;}
-    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:0.35em;color:#c9a227;margin-bottom:12px;}
+    .eyebrow{font-size:21px;text-transform:uppercase;letter-spacing:0.35em;color:#c9a227;margin-bottom:12px;}
     h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,7vw,80px);font-weight:600;line-height:1;color:#e8eaf2;}
     h1 em{font-style:italic;color:#c9a227;}
-    .tagline{font-family:'Cormorant Garamond',serif;font-size:18px;color:#8aa4c8;margin-top:6px;letter-spacing:0.1em;}
-    .for-tarek{font-family:'Cormorant Garamond',serif;font-size:16px;color:#c9a227;margin-top:4px;letter-spacing:0.15em;}
-    .header-meta{margin-top:16px;font-size:13px;color:#5a7a9a;display:flex;gap:20px;flex-wrap:wrap;}
-    .week-banner{background:#0d1f3c;color:#c9a227;padding:12px 40px;font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;letter-spacing:0.05em;border-bottom:2px solid #1a3a6b;line-height:1.7;}
+    .tagline{font-family:'Cormorant Garamond',serif;font-size:26px;color:#8aa4c8;margin-top:6px;letter-spacing:0.1em;}
+    .for-tarek{font-family:'Cormorant Garamond',serif;font-size:26px;color:#c9a227;margin-top:4px;letter-spacing:0.15em;}
+    .header-meta{margin-top:16px;font-size:26px;color:#5a7a9a;display:flex;gap:20px;flex-wrap:wrap;}
+    .week-banner{background:#0d1f3c;color:#c9a227;padding:12px 40px;font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;letter-spacing:0.05em;border-bottom:2px solid #1a3a6b;line-height:1.7;}
     .zone-summary{background:#091528;padding:24px 40px;border-bottom:3px solid #c9a227;}
-    .summary-label{font-family:'Cormorant Garamond',serif;font-size:15px;text-transform:uppercase;letter-spacing:0.25em;color:#c9a227;margin-bottom:12px;}
+    .summary-label{font-family:'Cormorant Garamond',serif;font-size:21px;text-transform:uppercase;letter-spacing:0.25em;color:#c9a227;margin-bottom:12px;}
     .summary-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
-    .summary-list li{font-size:16px;color:#c8d8e8;line-height:1.75;padding-left:16px;position:relative;}
+    .summary-list li{font-size:26px;color:#c8d8e8;line-height:1.75;padding-left:16px;position:relative;}
     .summary-list li::before{content:'—';position:absolute;left:0;color:#c9a227;}
     .zone{padding:44px 40px;}
     .zone-pipeline{background:#0e1e35;border-top:4px solid #1a3a6b;}
@@ -28,7 +28,7 @@
     .zone-ma{background:#1c1808;border-top:4px solid #8b6914;}
     .zone-science{background:#0e1a28;border-top:4px solid #2a4a6b;}
     .zone-head{display:flex;align-items:baseline;gap:12px;margin-bottom:28px;}
-    .zone-label{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;}
+    .zone-label{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;}
     .zone-pipeline .zone-label{color:#6a9ad4;}
     .zone-affairs .zone-label{color:#4ab89a;}
     .zone-trials .zone-label{color:#9a6ad4;}
@@ -44,25 +44,25 @@
     .zone-ma .card{border-color:#5a4214;}
     .zone-science .card{border-color:#1a3a5a;}
     .card-body{padding:20px 20px 0;}
-    .card-tag{font-size:13px;text-transform:uppercase;letter-spacing:0.2em;font-weight:600;margin-bottom:8px;}
+    .card-tag{font-size:26px;text-transform:uppercase;letter-spacing:0.2em;font-weight:600;margin-bottom:8px;}
     .zone-pipeline .card-tag{color:#6a9ad4;}
     .zone-affairs .card-tag{color:#4ab89a;}
     .zone-trials .card-tag{color:#9a6ad4;}
     .zone-ma .card-tag{color:#d4a827;}
     .zone-science .card-tag{color:#6a9ab8;}
-    .card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;line-height:1.35;margin-bottom:10px;color:#e8eaf2;}
-    .card-summary{font-size:16px;line-height:1.75;color:#8aa0b8;margin-bottom:16px;}
+    .card h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;line-height:1.35;margin-bottom:10px;color:#e8eaf2;}
+    .card-summary{font-size:26px;line-height:1.75;color:#8aa0b8;margin-bottom:16px;}
     .card-blocks{border-top:1px solid #1a2a3a;}
     .block{padding:14px 20px;border-bottom:1px solid #1a2a3a;}
     .block:last-child{border-bottom:none;}
-    .block-label{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+    .block-label{font-size:21px;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
     .block-means .block-label{color:#c9a227;}
     .block-takeaway .block-label{color:#4ab89a;}
     .block-means{background:#0d1c2e;}
     .block-takeaway{background:#081a14;}
-    .block-text{font-size:16px;line-height:1.75;color:#b0c4d8;}
-    .card-foot{padding:10px 20px;font-size:13px;color:#4a6a8a;display:flex;justify-content:space-between;border-top:1px solid #1a2a3a;}
-    footer{background:#060e1a;color:#c9a227;text-align:center;padding:24px 40px;font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;letter-spacing:0.08em;border-top:2px solid #1a3a6b;}
+    .block-text{font-size:26px;line-height:1.75;color:#b0c4d8;}
+    .card-foot{padding:10px 20px;font-size:26px;color:#4a6a8a;display:flex;justify-content:space-between;border-top:1px solid #1a2a3a;}
+    footer{background:#060e1a;color:#c9a227;text-align:center;padding:24px 40px;font-family:'Cormorant Garamond',serif;font-size:26px;font-style:italic;letter-spacing:0.08em;border-top:2px solid #1a3a6b;}
     @media(max-width:768px){header,.zone,.week-banner,.zone-summary{padding:20px 16px;}.header-meta{flex-direction:column;gap:6px;}.cards{grid-template-columns:1fr;}}
   </style>
 </head>
@@ -306,3 +306,4 @@
 
 </body>
 </html>
+
